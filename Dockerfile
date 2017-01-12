@@ -2,7 +2,7 @@ FROM node:slim
 
 RUN npm install -g bower
 
-ENV DART_VERSION 1.18.0
+ENV DART_VERSION 1.21.0
 
 RUN apt-get -q update && apt-get install --no-install-recommends -y -q curl git ca-certificates apt-transport-https vim
 RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - && \
